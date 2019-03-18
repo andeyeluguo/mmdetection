@@ -12,8 +12,13 @@ import torch
 '''  
 格式：  
 def parse_args():  
-  parser = argparse.ArgumentParser(description = ) 
-  
+  parser = argparse.ArgumentParser(description = “功能描述”)    
+  parser = add_argument('--参数名'，type=int，default=0，help='帮助说明')   
+  args = parser.parse_argas() 
+  return args 
+def main(): 
+  args = parse_args()
+  使用args.()
 '''  
 
 def parse_args():
