@@ -1,9 +1,12 @@
 这个fork过来的库应该很好用，本仓库主要作为注释，仅供学习，不得作为商业用途。
-
-
-
-
-
+使用教程：
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+pip install cython
+./compile.sh
+python3 setup.py install
+python3 tools/train.py configs/faster_rcnn_r50_fpn_1x.py --gpus 2 --validate
+如果coco使用的是2014的，请更改configs/faster_rcnn_r50_fpn_1x.py里面的2017改为2014，并，更改data的位置为images
 
 
 
