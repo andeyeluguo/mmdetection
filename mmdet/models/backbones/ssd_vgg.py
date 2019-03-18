@@ -29,7 +29,7 @@ class SSDVGG(VGG):
             with_last_pool=with_last_pool,
             ceil_mode=ceil_mode,
             out_indices=out_indices)
-        assert input_size in (300, 512)
+        assert input_size in (300, 512) #判断是否取值是否是一个
         self.input_size = input_size
 
         self.features.add_module(
