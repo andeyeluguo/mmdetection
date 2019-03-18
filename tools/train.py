@@ -13,13 +13,23 @@ import torch
 格式：  
 def parse_args():  
   parser = argparse.ArgumentParser(description = “功能描述”)    
-  parser = add_argument('--参数名'，type=int，default=0，help='帮助说明')   
+  parser.add_argument('--参数名'，type=int，default=0，help='帮助说明')   
   args = parser.parse_argas() 
   return args 
 def main(): 
   args = parse_args()
   使用args.()
+if __name__ == '__main__':
+  main()
 '''  
+'''
+定义三个函数的原因是使层次分明
+当然可以直接写（背诵下面语句）
+  import argparse
+  parser = argparse.ArgumentParser()
+  parser.add_argument()
+  args = parser.parse_args()
+'''
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a detector')
