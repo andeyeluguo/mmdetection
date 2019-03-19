@@ -9,7 +9,9 @@ python3 tools/train.py configs/faster_rcnn_r50_fpn_1x.py --gpus 2 --validate
 如果要训练SSD  
 则  
      python3 tools/train.py configs/ssd300_coco.py --gpus 2 --validate 
-如果coco使用的是2014的，请更改configs/faster_rcnn_r50_fpn_1x.py里面的2017改为2014，并，更改data的位置为images
+如果coco使用的是2014的，请更改configs/faster_rcnn_r50_fpn_1x.py里面的2017改为2014，并，更改data的位置为images 
+
+     欢迎加群讨论：703346870
 
 # mmdetection
 
